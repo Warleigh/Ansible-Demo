@@ -1,0 +1,9 @@
+---
+- name: creating user 
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks: 
+  - name: creat user dan  
+    user:
+      name: dan

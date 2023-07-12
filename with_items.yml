@@ -1,0 +1,12 @@
+---
+- name: uninstall multiple packages
+  hosts: all
+  become: true
+  gather_facts: yes
+
+  tasks: 
+  - name: uninstall packages
+    yum:
+      name: "['git', 'tree', 'telnet', 'bind']"
+      state: absent
+  
