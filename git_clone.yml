@@ -1,0 +1,11 @@
+---
+- name: cloning repo
+  hosts: all
+  gather_facts: no
+  vars_files:
+     - git_clone2.yml
+  tasks:
+  - name: cloning git repo
+    git:
+      repo: https://Warleigh:{{ git_password }}@github.com/Warleigh/vault-test.git
+      dest: /home/ansadmin/vault-test

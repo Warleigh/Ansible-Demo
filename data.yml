@@ -1,0 +1,12 @@
+---
+- name: creating user Mikel
+  host: all
+  become: true
+  gather_facts: no
+
+  tasks: 
+  - name: Creating user Mikel
+    user:
+      name: Mikel
+    
+      

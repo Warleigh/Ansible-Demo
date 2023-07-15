@@ -1,0 +1,4 @@
+ansible-vault encrypt playbookname
+ansible-vault decrypt ''
+ansible-vaullt create ''
+ansible-galaxy init /etc/ansible/role/apache --offline will initialize an apache playbook into your server
